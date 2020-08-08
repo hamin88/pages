@@ -1,8 +1,14 @@
+body{
+  background-color: #bbf0f3;
+  background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+}
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  background-color: #fff;
+  /*background-color: #fff; */
+  background-color: #bbf0f3;
+  background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
 }
 @media (min-width: 768px) {
   .jumbotron {
