@@ -1,38 +1,53 @@
+
+
 <!doctype html>
 <html lang="en">
-<head>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-<div class="container">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-</head>
-<center>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h2>Quick Search</h2>
-<br/>
-<div class="container">
-<form action="search.html" method="GET"> 
-  <div class="row justify-content-center">
-    <div class="col-md-offset-2 col-md-8">
-      <div class="input-group">
-        <input type="text" class="form-control" name="q" placeholder="Search" id="txtSearch"/>
-        <div class="input-group-btn">
-          <button class="btn btn-primary" type="submit">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </div>
+   <head>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+      <div class="container">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   </head>
+   <center>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h2>Quick Search</h2>
+      <br/>
+      <div class="container">
+      <form action="search.html" method="GET">
+         <div class="row justify-content-center">
+         <div class="col-md-2">
+            <div class="input-group mb-3">
+               <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">City</label>
+               </div>
+               <select class="custom-select" id="inputGroupSelect01">
+                  <option value="1" selected>Vadodara</option>
+                  <option value="2">Ahemdabad</option>
+                  <option value="3">Surat</option>
+               </select>
+            </div>
+            <div>
+               <div class="col-md-8">
+                  <div class="input-group">
+                     <input type="text" class="form-control" name="q" placeholder="Search" id="txtSearch"/>
+                     <div class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </form>
       </div>
-    </div>
-  </div>
-</form>
-</div>
-</center>
+   </center>
 </html>
+
