@@ -3,55 +3,67 @@
 <!doctype html>
 <html lang="en">
    <head>
-       
       <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-       
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    </head>
    <body>
-   <center>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <h2>Quick Search</h2>
-      <br/>
-      <div class="container">
-         <form class="form-inline" action="search.html" method="GET">
-            <div class="form-group">
-               <label class="sr-only" for="city">City:</label>
-               <select class="form-control" name="city">
-                  <option selected>Vadodara</option>
-                  <option>Ahemdabad</option>
-                  <option>Surat</option>
-               </select>
-            </div>
-            <div class="form-group">
-               <label class="sr-only" for="service">Service:</label>
-               <select class="form-control" name="service">
-                  <option selected>Hospital</option>
-                  <option>Fitness</option>
-                  <option>Travels</option>
-               </select>
-            </div>
-            <div class="form-group">
-               <input type="text" class="form-control" name="q" placeholder="Search" id="txtSearch"/>                  
+      <center>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/> 
+         <h2>Quick Search</h2>
+         <br/>
+         <div class="container">
+            <form action="search.html" method="GET">
+               <div class="row">
+                  <div class="col-md-offset-2 col-md-3  col-xs-offset-1 col-xs-10">
+                     <div class="row">
+                        <label for="city" class="col-md-3  control-label hidden-sm hidden-xs">City</label>
+                        <select class="col-md-9 col-xm-12 form-control" name="city" id="city" >
+                           <option selected>Vadodara</option>
+                           <option>Ahemdabad</option>
+                           <option>Surat</option>
+                        </select>
+                     </div>
+                  </div>
+				   <div class="col-md-1 col-xs-1">
+					</div>   
+                  <div class="col-md-3 col-xs-offset-1 col-xs-10">
+                     <div class="row">
+                        <label for="service" class="col-md-3 control-label hidden-xs hidden-sm">Service</label>
+                        <select class="col-md-9 col-xm-12 form-control" name="service">
+                           <option selected>Hospital</option>
+                           <option>Fitness</option>
+                           <option>Travels</option>
+                        </select>
+                     </div>
+                  </div>
                </div>
-            </div>
-          <button class="btn btn-primary" type="submit">
-                  <span class="glyphicon glyphicon-search"></span>
-         </button>
-      </div>
-      </form>       
-   </center>
+				 <div class="row">
+                  <div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-9">
+                     <div class="row">		
+                        <input class="form-control" name="q" placeholder="Search" id="txtSearch"/> 			                          
+                     </div>
+                  </div>
+				<div class="col-md-1 col-xs-1">
+					<div class="row">
+						<button class="btn btn-primary" type="submit">
+                        	<span class="glyphicon glyphicon-search"></span>
+                        </button> 
+				</div>
+					</div>
+				</div>                
+            </form>
+         </div>
+      </center>
    </body>
 </html>
+
