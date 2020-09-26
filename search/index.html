@@ -32,16 +32,24 @@
       <div class="container">
       <form action="search.html" method="GET">
          <div class="row justify-content-center">
-          <div class="col-md-2 input-container">
+          <div class="col-md-3 input-container">
            <label class="input-label">City</label>
-           <select class="form-control">
-             <option>Vadodara</option>
+           <select class="form-control" name="city">
+             <option selected>Vadodara</option>
              <option>Ahemdabad</option>
              <option>Surat</option>             
            </select>               
            </div>
+           <div class="col-md-3 input-container">
+           <label class="input-label">Service</label>
+           <select class="form-control" name="service">
+             <option selected>Hospital</option>
+             <option>Fitness</option>
+             <option>Travels</option>             
+           </select>               
+           </div>
             <div>
-               <div class="col-md-8">
+               <div class="col-md-6">
                   <div class="input-group">
                      <input type="text" class="form-control" name="q" placeholder="Search" id="txtSearch"/>
                      <div class="input-group-btn">
