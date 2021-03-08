@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sample Embed</title>
+      <script type="text/javascript" src="https://unpkg.com/amazon-quicksight-embedding-sdk@1.0.1/dist/quicksight-embedding-js-sdk.min.js"></script>
+      <script type="text/javascript">
+         function embedDashboard() {
+            var containerDiv = document.getElementById("dashboardContainer");
+            var params = {
+               url: "https://ap-south-1.quicksight.aws.amazon.com/sn/dashboards/2ccc3af7-c63d-4b69-bb7f-acd02f17cd4b",
+               container: containerDiv, 
+               height: "600px",
+               width: "800px"
+            };
+            var dashboard = QuickSightEmbedding.embedDashboard(params);
+            dashboard.on('error', function() {});
+            dashboard.on('load', function() {});
+            dashboard.setParameters({country: 'Canada'});
+          }
+      </script>
+   </head>
+ 
+<body onload="embedDashboard()">
+    <div id="dashboardContainer"></div>
+</body>
+<html>
+
